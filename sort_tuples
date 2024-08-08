@@ -1,0 +1,16 @@
+def sort_tuples():
+
+    my_list = []
+
+    while True:
+        my_tuple = input()
+        if not my_tuple:
+            break
+
+        my_list.append(tuple(my_tuple.split(",")))
+        sorted_tuples = sorted(my_list, key=lambda x: (x[0], int(x[1]), int(x[2])))
+    print(sorted_tuples)
+
+
+if __name__ == '__main__':
+    sort_tuples()
